@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Export Cookies",
+  "version": "1.0",
+  "description": "An extension to copy cookies to clipboard in JSON format.",
+  "permissions": [
+    "cookies",
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
+

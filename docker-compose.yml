@@ -4,20 +4,20 @@ services:
     image: n8nio/n8n:1.59.0
     ports:
       - "5678:5678"
-    environment:
-      - N8N_BASIC_AUTH_ACTIVE=true
-      - N8N_BASIC_AUTH_USER=n8nuser
-      - N8N_BASIC_AUTH_PASSWORD=n8npassword
+    env_file:
+      - .env
     networks:
       - custom_network
     volumes:
       - n8n_data:/home/node/.n8n
 
   selenium:
-    image: selenium/standalone-chrome:latest
+    image: selenium/standalone-chrome:4.24.0
     container_name: selenium_chrome
     ports:
       - "4444:4444"
+    env_file:
+      - .env
     networks:
       - custom_network
 
@@ -27,4 +27,3 @@ networks:
 
 volumes:
   n8n_data:
-
