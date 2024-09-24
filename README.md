@@ -117,6 +117,41 @@ docker-compose down
 This will stop and remove the containers, but your data will be persisted in the `n8n_data` volume.
 
 
+# Cookies Extraction
+
+To extract cookies in the correct format for using a logged session with the scraper, you can use the extension provided in the repository.
+
+### Quick Installation Guide: Installing a Chrome Extension from a Folder
+
+Follow these steps to install a Chrome extension from a local folder:
+
+### 1. Download or Clone the Extension
+Ensure you have the extension's files downloaded or cloned to a local folder on your computer.
+
+### 2. Open Chrome Extensions Page
+Open Google Chrome and navigate to the extensions page by either:
+- Typing `chrome://extensions/` into the address bar, OR
+- Clicking the three dots (menu) in the top-right corner → `More Tools` → `Extensions`.
+
+### 3. Enable Developer Mode
+On the extensions page, toggle on **Developer mode**. You’ll find this option in the upper-right corner of the page.
+
+### 4. Load Unpacked Extension
+Click the **Load unpacked** button (appears after enabling Developer mode).
+
+### 5. Select the Extension Folder
+A file browser will open. Navigate to the folder where the extension files are stored.
+Select the folder containing the extension’s `manifest.json` file and click **Select Folder**.
+
+### 6. Verify Installation
+The extension will appear on the extensions page. Make sure it is enabled.
+You should now see the extension icon in the Chrome toolbar, or you can manage it from the extensions page.
+
+---
+
+That's it! Your extension is now installed and ready to use from the folder.
+
+
 ## 🔎 Support
 
 If you're experiencing any issues getting started with n8n-ultimate-scraper, you can:
