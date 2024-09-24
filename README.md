@@ -117,7 +117,7 @@ docker-compose down
 This will stop and remove the containers, but your data will be persisted in the `n8n_data` volume.
 
 
-# Cookies Extraction
+## Cookies Extraction
 
 To extract cookies in the correct format for using a logged session with the scraper, you can use the extension provided in the repository.
 
