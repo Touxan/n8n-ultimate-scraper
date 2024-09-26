@@ -12,7 +12,7 @@ services:
       - n8n_data:/home/node/.n8n
 
   selenium:
-    image: selenium/standalone-chrome:4.24.0
+    image: selenium/standalone-chrome:129.0
     container_name: selenium_chrome
     ports:
       - "4444:4444"
