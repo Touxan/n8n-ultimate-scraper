@@ -102,7 +102,26 @@ curl -X POST http://localhost:5678/yourwebhookid \
       "description": "The total numbers of stars on the different repos"
     }
   ],
-  "cookie": []
+  "cookies": []
+}'
+```
+Or to just scrap a url :
+```bash
+curl -X POST http://localhost:5678/webhook-test/67d77918-2d5b-48c1-ae73-2004b32125f0 \
+-H "Content-Type: application/json" \
+-d '{
+  "Target Url": "https://github.com",
+  "Target data": [
+    {
+      "DataName": "Followers",
+      "description": "The number of followers of the GitHub page"
+    },
+    {
+      "DataName": "Total Stars",
+      "description": "The total numbers of stars on the different repo"
+    }
+  ],
+  "cookies": []
 }'
 ```
 
