@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/86f8ecfb-1a7b-4807-a02b-7b00735e1a96" width=250px: alt="N8n Ultimate Scraper Logo">
-  <h1>Welcome to the best way to scape using N8n</h1>
+  <h1>Welcome to the best way to scrape using N8n</h1>
   <p>A Web Scraper framework for N8n</p>
 <h1></h1>
 </div>
